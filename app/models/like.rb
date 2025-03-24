@@ -10,7 +10,7 @@
 #
 
 class Like < ApplicationRecord
-  validates(:fan, { :presence => true })
+  validates(:fan_id, { :presence => true })
   validates(:photo, { :presence => true })
   validates(:photo_id, { 
     :uniqueness => { :scope => [:fan_id] }
